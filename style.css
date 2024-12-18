@@ -1,0 +1,355 @@
+* { box-sizing: border-box;}
+
+/* Make html and body take full height so i can apply a sticky footer layout */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* across all pages adding a  Sticky footer layout using Flexbox */
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Lato", sans-serif; /* Global font */
+}
+
+/* main page content to fill space, pushing footer down */
+main {
+  flex: 1 0 auto;
+  padding: 0;
+}
+
+/* Footer will stay at the bottom */
+footer {
+  flex-shrink: 0;
+  background: #082b59;
+  padding: 10px;
+  text-align: center;
+}
+
+footer p{
+  font-family: "Lato", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.socials {
+  list-style-type: none;
+  font-family: "Lato", "sans-serif";
+  }
+
+  .footer-link {
+    color:#F2F2F2;
+    text-decoration: none;
+   }
+
+  /* font styles */
+  h1{
+    font-family: "Poppins", "sans-serif";
+    font-weight: 700;
+}
+
+h2 {
+font-family: "Poppins", "sans-serif";
+  font-weight: 400;
+}
+
+  /* nav bar details */
+  .nav-bar {
+    display:flex;
+    align-items: center;
+    background-color:#082B59; 
+    color:#F2F2F2; 
+    padding: 15px 10px;
+    }
+  
+  .nav-bar img {
+    height: 70px;
+    width: auto;
+    margin-right: auto;
+  }
+  
+  .nav-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-left: auto;
+  padding: 30px;
+  }
+  
+  .nav-list li a{
+    text-decoration: none;
+    color:#F2F2F2;
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .nav-list li a:hover {
+    color: #d98555;
+  }
+
+/*button information*/
+
+.button {
+  background-color: #59331D;
+  border: none;
+  color: #F2F2F2;
+  padding: 15px 20px;
+  text-align: center;
+  border-radius: 12px;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  width: 150px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+
+/*all home page details*/
+.home-page {
+  margin: 0;
+  padding: 0;
+  background-image: url("home page image.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+body.home-body {
+  /* Responsive background image on home page */
+  background: url('your-background-image.jpg') no-repeat center fixed;
+  background-size: cover;
+}
+
+/* Header styling on homepage */
+.home-page .header h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #F2F2F2; 
+  /* Add padding or margin if i think i need it */
+}
+
+/* Homepage content paragraphs */
+.home-page .home-content p {
+  line-height: 1.8;
+  margin-bottom: 20px;
+  text-align: justify;
+  font-family: "Poppins", sans-serif;
+  color: #F2F2F2; 
+}
+
+/* bean banner image for the home page */
+.bottom-bean-banner img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.bottom-bean-banner {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 0;
+ }
+
+
+/*all about page details*/
+
+.about-page-container {
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.about-page-container h1 {
+  margin-top: 80px;
+  margin-bottom: 10px;
+
+}
+.container {
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  column-gap: 120px;
+  width: 100%;
+  box-sizing:border-box;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.about-content {
+  grid-column: 1;
+  padding-right: 30px;
+}
+
+.about-content p {
+  line-height: 1.9;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.about-image {
+ grid-column: 2;
+ display: flex;
+ align-items: center;
+ padding-left: 20px;
+ padding-right: 20px;
+ }
+
+ .about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+ }
+
+ .highlight-link {
+  color:#59331D;
+  text-decoration: none;
+ }
+
+ /* all about the product page*/
+ .product-page-container {
+  max-width: 1900px;
+  margin: 0 auto;
+  padding: 0 20px;
+  margin-top: 50px;
+ }
+
+ .product-page-container h1 {
+  margin-top: 60px;
+  margin-bottom: 40px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color:#131D26 ;
+  padding-left: 42px;
+ }
+
+ .product-container {
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr;
+  column-gap: 50px;
+  row-gap: 40px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  width: 100%;
+  box-sizing:border-box;
+  text-align: justify;
+
+  }
+
+ .espresso-drip {
+  grid-area: 1 / 1 / span 1 / span 1;
+  padding: 20px;
+  margin: 0 auto;
+   }
+
+ .espresso-drip img {
+    border-radius: 10px;
+    max-width: 100%;
+    height:auto;
+ }
+
+ .colombian-blend-content {
+  grid-area: 1 / 2 / span 1 / span 1;
+  display: flex;
+  flex-direction: column;
+   align-items: flex-start;
+  justify-content: center;
+  padding: 20px;
+  max-width: 500px;
+ }
+
+ .colombian-blend-content p {
+  line-height: 1.9;
+  margin-bottom: 20px;
+ }
+
+ .three-piles-beans {
+  grid-area: 1 / 3 / span 1 / span 1;
+  padding: 20px;
+ }
+
+ .three-piles-beans img {
+  border-radius: 10px;
+  max-width: 100%;
+  height:auto;
+ }
+
+.triple-blend-content {
+  grid-area: 2 / 1 / span 1 / span 1;
+  display: flex;
+  flex-direction: column;
+   align-items: flex-start;
+  justify-content: center;
+  padding: 20px;
+  max-width: 500px;
+}
+
+.triple-blend-content p {
+  line-height: 1.9;
+  margin-bottom: 20px;
+}
+
+.pour-over-horizontal {
+  grid-area: 2 / 2 / span 1 / span 1;
+  padding: 20px;
+}
+
+.pour-over-horizontal img {
+  border-radius: 10px;
+  max-width: 100%;
+  height:auto;
+}
+
+.lightly-roasted-content {
+  grid-area: 2 / 3 / span 1 / span 1;
+  display: flex;
+  flex-direction: column;
+   align-items: flex-start;
+  justify-content: center;
+  padding: 20px;
+  max-width: 500px;
+}
+
+.lightly-roasted-content p {
+  line-height: 1.9;
+  margin-bottom: 20px;}
+
+
+  /* media queires */
+/* mobile */
+@media (max-width: 600px) {
+  .nav-list li {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .about-page-container h1 {
+    font-size: 24px;
+    margin-left: 0;
+  }
+  
+  .container {
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+/* tablet */
+@media (max-width: 760px) {
+  .container {
+    grid-template-columns: 1fr; /* single column on tablet */
+    column-gap: 20px;
+  }
+  .about-content p {
+    font-size: 16px;
+  }
+}
+
+
+
+
+
+ 

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@700&display=swap" crossorigin>
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>
+        About Gulp Coffee
+    </title>
+</head>
+
+
+<body>
+
+  <nav class="nav-bar">
+    <img src="https://assets.codepen.io/6306176/gulp-logo-light.png" alt="white-g-logo">
+
+    <ul class="nav-list">
+      <li class="menu"><a href="index.html">Home</a></li>
+      <li class="menu"><a href="about.html">About</a></li>
+      <li class="menu"><a href="products.html">Products</a></li>
+    </ul>
+    
+<!--or should I use <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#beans">Products</a></li>
+          <li><a href="#contact">Contact</a></li>
+      </ul>--> 
+
+</nav>
+
+<div class="about-page-container">
+  <h1>About Us</h1>
+  <div class= "container">
+  <div class="about-content">
+    
+    <p> 
+      Life without coffee is a gloomy place. That’s why Gulp Roast has been proudly serving up fresh coffee to the <a href="https://goo.gl/maps/3rAyszfwSDx8Si2Y9" class="highlight-link">San Francisco area</a> since 2000. Our coffee is locally sourced with the most delicious blends coming directly to your home, right from coffee farmers near you. Our coffee makes even the most difficult days just a tad easier to get through.</p>
+    <p>
+    For us, this isn’t just brewing coffee. This is an active life mission to bring our customers the most flavorful, full-bodied beverages we can get our hands on. Browse our site to learn more about our locations and sourcing techniques.
+    </p>
+    </div>
+
+    <div class="about-image">
+      <picture>
+        <!-- mobile devide first, smaller image-->
+        <source srcset="coffee-small-horizontal.jpg" media="(max-width: 600px)">
+        <!--when a table, a vertical image-->
+        <source srcset="coffee-vertical.jpg" media="(max-width:768px)">
+        <!-- desktop will be the default larger image-->
+        <img src="https://assets.codepen.io/6306176/gulp-pouring-coffee-horizontal.jpg" alt="Pour Over Coffee">
+      </picture>
+    </div>
+</div>
+
+    <button class="button">
+      Contact Us
+  </button>
+
+</div>
+
+<div class="bottom-bean-banner">
+  <img src= "gulp-bottom-beans.jpg" alt="Banner of Coffee Beans">
+</div>
+
+<footer class= "footer">
+  <p class="footer-text"> &copy; edX Boot Camps, LLC.  This is not a coffee website.  This is a fictitious company and scenario intended only for internal academic purposes.</p>
+  <ul class="socials">
+    <li><a href="https://uxuicurriculum.wixsite.com/gulproast" class="footer-link" target="_blank">Facebook</a></li>
+    <li><a href="https://uxuicurriculum.wixsite.com/gulproast" class="footer-link" target="_blank">X</a></li>
+    <li><a href="https://uxuicurriculum.wixsite.com/gulproast" class="footer-link" target="_blank">Instagram</a></li>
+  </ul>
+</footer>
+</body>
+
+</html>
